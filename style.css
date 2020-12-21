@@ -55,7 +55,9 @@ main {
   font-weight: 300;
   margin-bottom: 1rem;
 }
-
+.hidden {
+  display: none;
+}
 .score {
   font-size: 8rem;
   font-weight: 300;
@@ -147,7 +149,12 @@ main {
 .btn:focus {
   outline: none;
 }
-
+.btn:disabled,
+.btn[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
 .dice {
   position: absolute;
   left: 50%;
