@@ -43,7 +43,7 @@ btnRoll.addEventListener('click', () => {
         random = Math.trunc(Math.random() * 6 + 1);
         console.log(random);
         image.classList.remove('hidden');
-        image.src = `dice-${random}.png`;
+        image.src = `img/dice-${random}.png`;
 
         if (random !== 1) {
             currentScore += random;
